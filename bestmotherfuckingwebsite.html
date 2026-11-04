@@ -2,18 +2,37 @@
 <html lang="en">
 <head>
   <style>
-    
+
+    :root {
+      color-scheme: light dark;
+    }
+
     body {
-      margin:1em auto;
-      max-width:40em;
-      padding:0 .62em 3.24em;
-      font-family:Arial, Helvetica, sans-serif;
-      font:1.2em/1.62 sans-serif;
+      margin: auto;
+      max-width: 40em;
+      font-family: Arial, Helvetica, sans-serif;
+      font: 1.2em sans-serif;
+      line-height: 1.62;
+
+      background-color: light-dark(#ffffff, #000000);
+      color: light-dark(#333333, #ffffff);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2em;
     }
     
+    code {
+      border-radius: 0.25rem;
+    }
+
+    footer {
+      margin-bottom: 5.22em;
+    }
   </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
   <title>Best Motherfucking Website</title>
 </head>
 <body>
@@ -80,7 +99,7 @@
     <h3>This shit is gzipped.</h3>
 
     <p>
-      Your webserver is perfectly capable of compressing HTML. My Atom 330 CPU can perform single-core <code>gzip</code> -6 on random data at 51 megabits per second. My Xeon E5-2670 from 2012 can do this at 216 megabits per second. Your meme website isn’t as random as you think it is and will compress much faster.
+      Your webserver is perfectly capable of compressing HTML. My Atom 330 CPU can perform single-core <code>gzip -6</code> on random data at 51 megabits per second. My Xeon E5-2670 from 2012 can do this at 216 megabits per second. Your meme website isn’t as random as you think it is and will compress much faster.
     </p>
 
     <h3>Cache is Money</h3>
@@ -93,7 +112,7 @@
 
     <h3>Yes, this is fucking satire, you fuck</h3>
 
-    <p>I’m not actually saying your shitty site should look like this. What I’m saying is that all the problems we have with websites are <b>ones we create ourselves</b> . Websites aren’t broken by default, they are functional, high-performing, and accessible. You break them. You son-of-a-bitch.</p>
+    <p>I’m not actually saying your shitty site should look like this. What I’m saying is that all the problems we have with websites are <b>ones we create ourselves</b>. Websites aren’t broken by default, they are functional, high-performing, and accessible. You break them. You son-of-a-bitch.</p>
   </main>
   
   <footer>

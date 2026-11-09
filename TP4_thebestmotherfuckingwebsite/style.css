@@ -186,13 +186,15 @@ a:visited {
 }
 
 button {
-    position: absolute;
+    font-family: Open sans-serif, Arial, Helvetica, sans-serif;
+    position: fixed;
     right: 10px;
     cursor: pointer;
     text-decoration: underline;
     border: 0;
     border-radius: 2px;
-    padding: 4px 7px;
+    padding: 2px 5px;
+    font-size: 0.8em;
 }
 
 button.contrast {

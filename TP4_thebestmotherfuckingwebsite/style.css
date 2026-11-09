@@ -98,6 +98,10 @@ span.red-mfw {
     cursor: not-allowed;
 }
 
+li img {
+    height: 1em;
+}
+
 span.square {
     display: inline-block;
     width: 16px;
@@ -146,8 +150,35 @@ figure {
     margin-top: 0;
 }
 
+blockquote {
+    margin: 2em 0em;
+}
+
+blockquote p {
+    float: left;
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
+blockquote cite {
+    display: block;
+    clear: both;
+    font-size: .6em;
+    margin-left: 2.4em;
+}
+
 a {
     color: #0077AA;
+}
+
+.kopimi{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.kopimi {
+    width: 2rem;
 }
 
 a:visited {

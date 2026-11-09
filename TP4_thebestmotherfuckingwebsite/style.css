@@ -103,6 +103,8 @@ a:visited {
 }
 
 button {
+    position: absolute;
+    right: 10px;
     cursor: pointer;
     text-decoration: underline;
     border: 0;
@@ -111,11 +113,13 @@ button {
 }
 
 button.contrast {
+    top: 10px;
     color:black;
     background-color: #f0f0f0;
 }
 
 button.invert {
+    top: 34px;
     color:#fff;
     background-color: black;
 }

@@ -1,46 +1,123 @@
 body {
-    font-family: Open sans-serif, Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     margin: 4.35em auto;
     color: #454545;
     max-width: 800px;
     line-height: 1.4;
     hyphens: auto;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: #000000;
+        color: #d9d9d9;
+    }
 }
 
-i {
-    font-family: Open-italic sans-serif, Arial, Helvetica, sans-serif;
+header {
+    p {
+        margin-top: -1em;
+    }
 }
 
-h1, h2, h3, b {
-    font-family: Open-bold sans-serif, Arial, Helvetica, sans-serif;
+pre {
+    font-size: 1.1em;
 }
 
-header p {
-    margin-top: -1em;
+a {
+    color: #0077AA;
+
+    &:visited {
+        color: #941352;
+
+        @media (prefers-color-scheme: dark) {
+            color: #ca1a70;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: #00a2e7;
+    }
 }
 
-h1 i {
-    font-family: Open-bold-italic sans-serif, Arial, Helvetica, sans-serif;
-}
+button {
+    font-family: inherit;
+    position: fixed;
+    right: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    border: 0;
+    border-radius: 2px;
+    padding: 2px 5px;
+    font-size: 0.8em;
 
+    &.contrast {
+        top: 10px;
+        color: black;
+        background-color: #f0f0f0;
+        
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
+            background-color: black;
+        }
+    }
+
+    &.invert {
+        top: 34px;
+        color: #fff;
+        background-color: black;
+    }
+}
 
 span.red-mfw {
-    color:maroon;
+    color: maroon;
+
+    @media (prefers-color-scheme: dark) {
+        color: #b00000;
+    }
 }
 
 .maroon {
     color: maroon;
     text-decoration-color: #0077AA;
+
+    &:visited {
+        @media (prefers-color-scheme: dark) {
+            color: #941352;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        color: #941352;
+    }
 }
 
 .bad-word {
-    font-family: Open-semibold sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 600;
     color: #c0392b;
     text-decoration: underline;
+
+    @media (prefers-color-scheme: dark) {
+        color: #d24637;
+    }
 }
 
 .tiny-text {
     font-size: .4em;
+}
+
+.blue-text {
+    color: blue;
+
+    @media (prefers-color-scheme: dark) {
+        color: #0000e0;
+    }
+}
+
+.violetish-text {
+    color: #551a8b;
+}
+
+.blocked {
+    cursor: not-allowed;
 }
 
 .rainbow-text {
@@ -48,58 +125,24 @@ span.red-mfw {
 }
 
 @keyframes rainbow_animation {
-    100%,0%{
-			color: rgb(255,0,0);
-		}
-		8%{
-			color: rgb(255,127,0);
-		}
-		16%{
-			color: rgb(255,255,0);
-		}
-		25%{
-			color: rgb(127,255,0);
-		}
-		33%{
-			color: rgb(0,255,0);
-		}
-		41%{
-			color: rgb(0,255,127);
-		}
-		50%{
-			color: rgb(0,255,255);
-		}
-		58%{
-			color: rgb(0,127,255);
-		}
-		66%{
-			color: rgb(0,0,255);
-		}
-		75%{
-			color: rgb(127,0,255);
-		}
-		83%{
-			color: rgb(255,0,255);
-		}
-		91%{
-			color: rgb(255,0,127);
-		}
+    100%, 0% { color: rgb(255, 0, 0); }
+    8%       { color: rgb(255, 127, 0); }
+    16%      { color: rgb(255, 255, 0); }
+    25%      { color: rgb(127, 255, 0); }
+    33%      { color: rgb(0, 255, 0); }
+    41%      { color: rgb(0, 255, 127); }
+    50%      { color: rgb(0, 255, 255); }
+    58%      { color: rgb(0, 127, 255); }
+    66%      { color: rgb(0, 0, 255); }
+    75%      { color: rgb(127, 0, 255); }
+    83%      { color: rgb(255, 0, 255); }
+    91%      { color: rgb(255, 0, 127); }
 }
 
-.blue-text {
-    color: blue;
-}
-
-.violetish-text {
-    color: #551a8b
-}
-
-.blocked {
-    cursor: not-allowed;
-}
-
-li img {
-    height: 1em;
+li {
+    img {
+        height: 1em;
+    }
 }
 
 span.square {
@@ -110,16 +153,34 @@ span.square {
     margin-right: -.05em;
 }
 
-#color-444 span {
-    background-color: #444;
+#color-444 {
+    span {
+        background-color: #444;
+    }
+    @media (prefers-color-scheme: dark) {
+        color: #444;
+    }
 }
 
-#color-454545 span {
-    background-color: #454545;
+#color-454545 {
+    span {
+        background-color: #454545;
+    }
+    @media (prefers-color-scheme: dark) {
+        color: #454545;
+    }
 }
 
-pre {
-    font-size: 1.1em;
+figure {
+    margin: 10px;
+
+    img {
+        width: 100%;
+    }
+
+    figcaption {
+        font-size: .7em;
+    }
 }
 
 .picture {
@@ -132,118 +193,31 @@ pre {
 .text-block-right {
     float: left;
     width: 55%;
-}
 
-figure img {
-    width: 100%;
-}
-
-figcaption {
-    font-size: .7em;
-}
-
-figure {
-    margin: 10px;
-}
-
-.text-block-right p:first-child {
-    margin-top: 0;
+    p:first-child {
+        margin-top: 0;
+    }
 }
 
 blockquote {
-    margin: 2em 0em;
+    margin: 2em 0;
+
+    p {
+        float: left;
+        margin-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    cite {
+        display: block;
+        clear: both;
+        font-size: .6em;
+        margin-left: 2.4em;
+    }
 }
 
-blockquote p {
-    float: left;
-    margin-left: 1rem;
-    padding-top: 1rem;
-}
-
-blockquote cite {
+.kopimi {
     display: block;
-    clear: both;
-    font-size: .6em;
-    margin-left: 2.4em;
-}
-
-a {
-    color: #0077AA;
-}
-
-.kopimi{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img.kopimi {
+    margin: 0 auto;
     width: 2rem;
-}
-
-a:visited {
-    color: #941352;
-}
-
-button {
-    font-family: Open sans-serif, Arial, Helvetica, sans-serif;
-    position: fixed;
-    right: 10px;
-    cursor: pointer;
-    text-decoration: underline;
-    border: 0;
-    border-radius: 2px;
-    padding: 2px 5px;
-    font-size: 0.8em;
-}
-
-button.contrast {
-    top: 10px;
-    color:black;
-    background-color: #f0f0f0;
-}
-
-button.invert {
-    top: 34px;
-    color:#fff;
-    background-color: black;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #000000;
-        color: #d9d9d9;
-    }
-
-    span.red-mfw {
-        color: #b00000;
-    }
-
-    .maroon, .maroon:visited {
-        color: #941352;
-    }
-
-    .bad-word {
-        color: #d24637;
-    }
-
-    .blue-text {
-        color: #0000e0;
-    }
-
-    a {
-        color: #00a2e7;
-    }
-
-    a:visited {
-        color: #5f9ea0;
-    }
-
-    b#color-444 {
-        color: #444;
-    }
-
-    b#color-454545 {
-        color: #454545;
-    }
 }

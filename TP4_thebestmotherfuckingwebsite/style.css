@@ -100,9 +100,10 @@ span.red-mfw {
 
 span.square {
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-left: .1em;
+    margin-right: -.05em;
 }
 
 span#color-444 {

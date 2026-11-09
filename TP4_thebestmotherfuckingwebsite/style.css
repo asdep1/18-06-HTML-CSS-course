@@ -1,5 +1,10 @@
 body {
     font-family: Open sans-serif, Arial, Helvetica, sans-serif;
+    margin: 4.35em auto;
+    color: #454545;
+    max-width: 800px;
+    line-height: 1.4;
+    hyphens: auto;
 }
 
 i {
@@ -8,6 +13,10 @@ i {
 
 h1, h2, h3, b {
     font-family: Open-bold sans-serif;
+}
+
+header p {
+    margin-top: -1em;
 }
 
 h1 i {
@@ -25,12 +34,13 @@ span.red-mfw {
 }
 
 .bad-word {
-    color: red;
+    font-family: Open-semibold sans-serif;
+    color: #c0392b;
     text-decoration: underline;
 }
 
 .tiny-text {
-
+    font-size: .4em;
 }
 
 .rainbow-text {
@@ -101,6 +111,10 @@ span#color-444 {
 
 span#color-454545 {
     background-color: #454545;
+}
+
+pre {
+    font-size: 1.1em;
 }
 
 a {

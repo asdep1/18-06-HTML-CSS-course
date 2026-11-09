@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span.red-mfw, maroon {
+    color:maroon;
+}
+
+.bad-word {
+    color: red;
+    text-decoration: underline;
+}
+
+.tiny-text {
+
+}
+
+.rainbow-text {
+    animation: rainbow_animation 1s linear infinite;
+}
+
+@keyframes rainbow_animation {
+    100%,0%{
+			color: rgb(255,0,0);
+		}
+		8%{
+			color: rgb(255,127,0);
+		}
+		16%{
+			color: rgb(255,255,0);
+		}
+		25%{
+			color: rgb(127,255,0);
+		}
+		33%{
+			color: rgb(0,255,0);
+		}
+		41%{
+			color: rgb(0,255,127);
+		}
+		50%{
+			color: rgb(0,255,255);
+		}
+		58%{
+			color: rgb(0,127,255);
+		}
+		66%{
+			color: rgb(0,0,255);
+		}
+		75%{
+			color: rgb(127,0,255);
+		}
+		83%{
+			color: rgb(255,0,255);
+		}
+		91%{
+			color: rgb(255,0,127);
+		}
+}
+
+.blue-text {
+    color: blue;
+}
+
+.violetish-text {
+    color: #551a8b
+}
+
+.blocked {
+    cursor: not-allowed;
+}
+
+span.square {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+span#color-444 {
+    background-color: #444;
+}
+
+span#color-454545 {
+    background-color: #454545;
+}

@@ -2,9 +2,18 @@ body {
     font-family: Open sans-serif, Arial, Helvetica, sans-serif;
 }
 
+i {
+    font-family: Open-italic sans-serif;
+}
+
 h1, h2, h3, b {
     font-family: Open-bold sans-serif;
 }
+
+h1 i {
+    font-family: Open-bold-italic sans-serif;
+}
+
 
 span.red-mfw {
     color:maroon;

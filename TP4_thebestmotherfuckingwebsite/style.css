@@ -1,9 +1,18 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Open sans-serif, Arial, Helvetica, sans-serif;
 }
 
-span.red-mfw, maroon {
+h1, h2, h3, b {
+    font-family: Open-bold sans-serif;
+}
+
+span.red-mfw {
     color:maroon;
+}
+
+.maroon {
+    color: maroon;
+    text-decoration-color: #0077AA;
 }
 
 .bad-word {
@@ -83,4 +92,12 @@ span#color-444 {
 
 span#color-454545 {
     background-color: #454545;
+}
+
+a {
+    color: #0077AA;
+}
+
+a:visited {
+    color: #941352;
 }

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Open sans-serif;
+    src: url(assets/sans-serif.woff2);
+}
+
+@font-face {
+    font-family: Open-semibold sans-serif;
+    src: url(assets/sans-serif-semibold.woff2);
+}
+
+@font-face {
+    font-family: Open-italic sans-serif;
+    src: url(assets/sans-serif-italic.woff2);
+}
+
+@font-face {
+    font-family: Open-bold sans-serif;
+    src: url(assets/sans-serif-bold.woff2);
+}
+
+@font-face {
+    font-family: Open-bold-italic sans-serif;
+    src: url(assets/sans-serif-bold-italic.woff2);
+}

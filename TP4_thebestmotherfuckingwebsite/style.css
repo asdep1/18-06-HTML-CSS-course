@@ -118,6 +118,34 @@ pre {
     font-size: 1.1em;
 }
 
+.picture {
+    float: left;
+    width: 40%;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+.text-block-right {
+    float: left;
+    width: 55%;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: .7em;
+}
+
+figure {
+    margin: 10px;
+}
+
+.text-block-right p:first-child {
+    margin-top: 0;
+}
+
 a {
     color: #0077AA;
 }

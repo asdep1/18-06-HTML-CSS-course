@@ -4,11 +4,182 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Surfhorizon</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div>
+        <img src="https://picsum.photos/60/60" alt="logo">
+        <h2>Surfhorizon</h2>
+      </div>
+
+      <div>
+        <a href="#school"></a>
+        <a href="#offre"></a>
+        <a href="#galerie"></a>
+        <a href="#contact"></a>
+      </div>
+    </header>
+    <main>
+      <section id="home"> <!-- image background -->
+        <h1>Domptez les vagues avec <span class="surfhorizon">SURFHORIZON</span></h1>
+        <p class="sub-title">Rejoignez notre école de surf et vivez des sensations uniques. Des cours adaptés à tous les niveaux, dans un cadre idyllique.</p>
+        <a href="#offre">Nos offres</a>
+      </section>
+      <section id="school">
+        <div>
+          <img src="https://picsum.photos/800/600" alt="Groupe de surfeur marchant vers l'océan">
+        </div>
+
+        <div>
+          <h2>Notre passion à votre service</h2>
+        </div>
+        <p>Chez <b>SURFHORIZON</b>, nous croyons que l'océan est le meilleur terrain de jeu. Fondée par des passionnés, notre école s'engage à vous transmettre l'amour de la glisse en toute sécurité.</p>
+        <p>Que vous souhaitiez vous lever sur une planche pour la première fois ou perfectionner vos manœuvres, nos moniteurs diplômés vous accompagnent avec pédagogie et bonne humeur.</p>
+        <ul>
+          <li>Moniteurs diplômés d'État</li>
+          <li>Matériel premium inclus</li>
+          <li>Groupes de niveau adaptés</li>
+        </ul>
+      </section>
+      <section id="offre">
+        <h2>Nos Offres & Tarifs</h2>
+        <p>Choisissez la formule qui vous correspond. Le prêt de la planche et de la combinaison est inclus dans toutes nos offres.</p>
+      
+        <div class="offre">
+          <h3>Demi-journée</h3>
+          <p>L'idéal pour une initiation en douceur ou une session express.</p>
+
+          <p class="price"><span class="price-amount">30€</span> / pers.</p>
+
+          <ul>
+            <li>2h dans l'eau</li>
+            <li>Matériel inclus</li>
+          </ul>
+
+          <button>Réserver</button>
+        </div>
+
+        <div class="offre">
+          <h3>Demi-journée</h3>
+          <p>L'idéal pour une initiation en douceur ou une session express.</p>
+
+          <p class="price"><span class="price-amount">30€</span> / pers.</p>
+
+          <ul>
+            <li>2h dans l'eau</li>
+            <li>Matériel inclus</li>
+          </ul>
+
+          <button>Réserver</button>
+        </div>
+
+        <div class="offre">
+          <h3>Journée complète</h3>
+          <p>Pour une progression optimale avec deux sessions dans la journée</p>
+
+          <p class="price"><span class="price-amount">60€</span> / pers.</p>
+
+          <ul>
+            <li>2 x 2h dans l'eau</li>
+            <li>Matériel inclus</li>
+            <li>Analyse vidéo le midi</li>
+          </ul>
+
+          <button>Réserver</button>
+        </div>
+
+        <div class="offre">
+          <h3>Stage Week-end</h3>
+          <p>Immersion totale sur 3 jours pour devenir un vrai surfeur.</p>
+
+          <p class="price"><span class="price-amount">250€</span> / pers.</p>
+
+          <ul>
+            <li>Vendredi à Dimanche</li>
+            <li>6 sessions encadrées</li>
+            <li>Repas du midi inclus</li>
+          </ul>
+
+          <button>Réserver</button>
+        </div>
+      
+      </section>
+      <section id="galerie">
+        <h2>Vivez l'expérience</h2>
+        <p>Découvre les moments forts de nos stages en images</p>
+
+        <div>
+          <div><img src="https://picsum.photos/600/400?random=1" alt=""></div>
+          <div>
+            <div>
+              <img src="https://picsum.photos/600/400?random=2" alt="">
+              <img src="https://picsum.photos/600/400?random=3" alt="">
+            </div>
+            <img src="https://picsum.photos/600/400?random=4" alt="">
+          </div>
+        </div>
+
+      </section>
+      <section id="contact">
+        <div>
+          <div> <!-- Partie de gauche/du haut -->
+            <h2>Prêt à vous jeter à l'eau ?</h2>
+            <div>
+              <form action="POST">
+                <label for="name">Nom complet</label>
+                <input type="text" name="name" id="id">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+                <label for="comment">Votre message</label>
+                <textarea name="comment" id="comment"></textarea>
+
+                <button>Envoyer ma demande</button>
+              </form>
+            </div>
+          </div>
+          <div>
+              <h3>Nos coordonnées</h3>
+              <ul>
+                <li>
+                  <img src="" alt="">
+                  <span>Plage des Dunes, 40150 Hossegor, France</span>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <span>+33 6 12 34 56 78</span>
+                </li>
+                <li>
+                  <img src="" alt="">
+                  <span>hello@surfhorizon.fr</span>
+                </li>
+              </ul>
+
+              <p>Suivez nos aventures</p>
+
+              <div class="social-button">
+                <a href="instagram.com">
+                  <img src="https://cdn.simpleicons.org/instagram/004E89" alt="instagram">
+                </a>
+              </div>
+
+              <div class="social-button">
+                <a href="tiktok.com">
+                  <img src="https://cdn.simpleicons.org/tiktok/004E89" alt="tiktok">
+                </a>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>2026 SURFHORIZON. Tous droits réservés.</p>
+      <div class="legal">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+      </div>
+    </footer>
   </body>
 </html>
